@@ -1,2 +1,10 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<h1>Contact</h1>
+<h2>We take your concerns very seriously, please contact one of our helpers for any questions or concerns.</h2><br>
+<h3>Helpers</h3>
+<% @helpers.each do |h| %>
+<hr>
+<p>Name: <%= h.name %></p><br>
+<p>Phone#: <%= h.phone_number %></p><br>
+<p>Rating: <%= h.rating %>/100</p><br>
+<p>Status: <%= if h.online then "Online" else "Offline" end%></p><br>
+<% end %>

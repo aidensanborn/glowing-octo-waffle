@@ -1,2 +1,6 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>All Products</h1><br>
+<% @products.each do |p| %>
+<h3><%=p.name%></h3><br>
+<p>Price: <%=p.price%></p><br>
+<p>Desc: <%=p.description%></p><br>
+<% end %>
